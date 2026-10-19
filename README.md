@@ -60,3 +60,45 @@ MRKY      53.80  9.61  0.66 0.56  31.60      6.34        2.55     1.00     1.00 
 NLMK     507.40  8.04  0.59 0.61  19.80      3.29       -0.33     0.66     1.00      1.00     1.00       1.00        1        1    1.0000          1       6.600       0.5     3.300
 ```
 Table 1. Group of stocks from portfolio with proposed portions in the last column (max capped at 10%)
+```
+$winners
+   cluster n_members n_held top_weight n_winners         winners
+1        1         1      1   10.00000         1           BISVP
+2        2        11     11   10.00000         1            DVEC
+3        3         1      1   10.00000         1            EELT
+4        4         2      2   10.00000         1            KAZT
+5        5        10     10   10.00000         3  KBSB MISB VRSB
+6        6         2      2   10.00000         1            KRSB
+7        7         1      1   10.00000         1            MRKC
+8        8         3      3   10.00000         3  MRKP MRKU MRKV
+9        9         1      1   10.00000         1            MRSB
+10      10         1      1   10.00000         1            TTLK
+11      11         1      1   10.00000         1           WTCMP
+12      12         1      1    6.60000         1            BELU
+13      13         1      1    6.60000         1            DIAS
+14      14         1      1    6.60000         1            LPSB
+15      15         1      1    6.60000         1            MGKL
+16      16         3      3    6.60000         3 MSNG NMTP TRNFP
+17      17         1      1    6.60000         1            PMSB
+18      18         1      1    6.60000         1            VLHZ
+19      19         1      1    6.60000         1            VSEH
+20      20         1      1    5.00000         1            ASSB
+21      21         1      1    5.00000         1            SAGO
+22      22         1      1    5.00000         1            STSB
+23      23         2      2    5.00000         1            UWGN
+24      24         1      1    4.35600         1            CNRU
+25      25         1      1    4.35600         1            DATA
+26      26         1      1    4.35600         1            GCHE
+27      27         1      1    3.30000         1            LENT
+28      28         8      8    3.30000         3  NLMK GMKN TATN
+29      29         1      1    2.87496         1            AKRN
+30      30         1      1    2.87496         1            ASTR
+31      31         1      1    2.87496         1            MDMG
+32      32         1      1    2.17800         1            GEMC
+33      33         1      1    2.17800         1            MGTS
+34      34         1      1    2.17800         1            SPBE
+35      35         1      1    2.17800         1            UTAR
+36      36         1      1    1.43748         1            KROT
+37      37         1      1    1.43748         1            PLZL
+```
+Table 2. Selection of Stocks by Clusters
