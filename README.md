@@ -2,7 +2,7 @@
 
 Welcome to the repository!
 
-Here you can find scripts that can be used to select stocks for portfolio accroding to small cap and value preferences with recommendation for portion percentage.
+Here you can find scripts that can be used to select stocks for portfolio according to small cap and value preferences with recommendation for portion percentage. If you are particularly interested in constructing a portfolio where small cap and value stocks are prevalent but do not want to get rid of stocks of other types, you are in right repo.
 
 ```
      MARKET/CAP   P/E  P/BV  P/S  P/FCF EV/EBITDA DEBT/EBITDA grade_mc grade_pe grade_pbv grade_ps grade_pfcf grade_ee grade_de grade_val grade_debt final_grade div_grade the_grade
@@ -60,6 +60,13 @@ MRKY      53.80  9.61  0.66 0.56  31.60      6.34        2.55     1.00     1.00 
 NLMK     507.40  8.04  0.59 0.61  19.80      3.29       -0.33     0.66     1.00      1.00     1.00       1.00        1        1    1.0000          1       6.600       0.5     3.300
 ```
 Table 1. Group of stocks from portfolio with proposed portions in the last column (max capped at 10%)
+
+In table 1 we have stocks graded by their market cap, valuation and dividend payout. Small cap, value and dividend stock receive the highest weight.
+
+![](https://github.com/vladislavpyatnitskiy/stock_selector/blob/main/Plots/Dendrogram%20Plot.png?raw=true)
+Fig. 1. Dendrogram Plot for stock correlations
+
+Next step is to choose stocks among those we have selected according to our parameters. In order to get rid of stocks that may be highly correlated, we use dendrogram I get a list of stocks that have weakly correlated between each other.
 ```
 $winners
    cluster n_members n_held top_weight n_winners         winners
@@ -102,3 +109,10 @@ $winners
 37      37         1      1    1.43748         1            PLZL
 ```
 Table 2. Selection of Stocks by Clusters
+
+Now, we have a list of these stocks and may create a portfolio. Let us select them manually and get median correlations of these stocks on figure 2.
+
+![](https://github.com/vladislavpyatnitskiy/stock_selector/blob/main/Plots/Stock%20Correlations.png?raw=true)
+Fig. 2. Stock Correlations of selected stocks
+
+Here we see that stock correlations are low so we can construct a good portfolio of these stocks.
